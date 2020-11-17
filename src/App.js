@@ -4,6 +4,7 @@ import { Paper, TextField, Button } from '@material-ui/core/';
 import Navbar from './nav';
 import { colors } from '@material-ui/core';
 import { blue } from '@material-ui/core/colors';
+import BarChart from './barChart';
 
 const useStyles = makeStyles((theme) => ({
 
@@ -20,11 +21,6 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-
-
-
-
-
 function App() {
   const classes = useStyles();
 
@@ -39,12 +35,12 @@ function App() {
           <Button variant="contained" color="primary" className={classes.input}>
             Login
           </Button>
-
-
         </form>
       </Paper>
+      
     </div>
   );
+  
 }
 
 export default App;
